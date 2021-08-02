@@ -1,0 +1,124 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --dark-blue: hsl(238, 29%, 16%);
+    --soft-red:hsl(14, 88%, 65%);
+    --soft-violet:hsl(273, 75%, 66%);
+    --soft-blue:hsl(240, 73%, 65%);
+    --vgrayish-blue:hsl(237, 12%, 33%);
+    --dgrayish-blue:hsl(240, 6%, 50%);
+    --lgrayish-blue:hsl(240, 5%, 91%);
+}
+
+
+*{
+    padding:0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+    min-height: 100vh;
+    background-repeat: no-repeat ;
+}
+
+.wrapper{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__desktop{
+    display: none;
+}
+
+.card{
+    background-color: white;
+    width: 350px;
+    min-height: 580px;
+    border-radius: 25px;
+    position: relative;
+    transition: height 0.5s; 
+}
+
+
+.card--women{
+    position: absolute;
+    top: -105px;
+    left: 20px; 
+}
+
+.card--pattern{
+    position: absolute;
+    left: 45px; 
+}
+
+.card__title{
+    margin-top: 120px;
+    margin-bottom: 40px; 
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.Qcards{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Qcard{
+    border-bottom: 2px solid var(--lgrayish-blue);
+    padding-bottom: 10px;
+    width: 310px;
+    height: 60px;
+    margin: auto;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.Qcard__title{
+    font-weight: 400;
+    font-size: 15px; 
+    margin-top: 15px;
+}
+
+.Qcard__answer{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 0px 10px 0px ;
+    line-height: 20px;
+}
+
+.wrapper2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 310px;
+    margin: 10px auto; 
+    color: black;
+}
+
+
+.card__arrow{
+    padding-top:15px;
+}
+
+.wrapper2:hover{
+    color: var(--soft-red);
+}
+
+
+
+
+
+
+
